@@ -1,4 +1,4 @@
-[![Tillman Connection](hero-img.png)](http://tillmanconnection.com/)
+[![Luminous Hilt](hero-img.png)](http://luminoushilt.com/)
 
-# Tillman Connection
-This is the repository for Tillman Connection's wordpress theme, [Tillman Connection](http://tillmanconnection.com/).
+# Luminous Hilt
+This is the repository for Luminous Hilt's wordpress theme, [Luminous Hilt](http://luminoushilt.com/).
