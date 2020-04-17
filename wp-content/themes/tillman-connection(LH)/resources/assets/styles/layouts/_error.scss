@@ -1,0 +1,17 @@
+.search-form {
+  @extend .field, .is-grouped;
+
+  label {
+    @extend .control, .is-expanded;
+
+    margin-top: 2rem;
+
+    .search-field {
+      @extend .input;
+    }
+
+    .search-submit {
+      @extend .button, .is-info;
+    }
+  }
+}

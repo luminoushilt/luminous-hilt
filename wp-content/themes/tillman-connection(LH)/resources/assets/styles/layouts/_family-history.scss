@@ -1,0 +1,29 @@
+.family-history {
+  .linage-subtitle {
+    color: $text-color;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 70px;
+    margin-top: -24px;
+  }
+
+  .has-round-corners {
+    border-radius: 10px;
+    max-height: 100%;
+    max-width: 300px;
+  }
+
+  .hero-section-content-text {
+    color: $white;
+  }
+
+  .hero-section-content {
+    p {
+      color: $text-color;
+    }
+
+    a {
+      color: $tillman;
+    }
+  }
+}

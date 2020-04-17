@@ -1,0 +1,21 @@
+.contact-us {
+  .article-banner-container {
+    background-position: top;
+  }
+
+  form {
+    .wpcf7-submit {
+      color: $white !important;
+    }
+  }
+
+  .has-icon-centered {
+    align-content: center;
+    display: flex;
+    top: 10px !important;
+
+    i {
+      align-self: center;
+    }
+  }
+}

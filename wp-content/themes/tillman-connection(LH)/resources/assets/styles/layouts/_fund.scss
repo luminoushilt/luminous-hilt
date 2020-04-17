@@ -1,0 +1,57 @@
+$page-width: 960px;
+
+.archive {
+  .custom-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: $page-width;
+    width: 100%;
+
+    .fundraise-hero {
+      height: 100%;
+      margin: 0 0 0.8rem;
+      max-height: 600px;
+      max-width: $page-width;
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    .archive-read-more {
+      align-self: flex-end;
+      display: flex;
+    }
+  }
+}
+
+.single-fund {
+  .article-banner-container {
+    background-position: center;
+  }
+
+  .hero-section-content {
+    font-weight: 300;
+  }
+
+  .gallery {
+    @extend .columns;
+    @extend .is-multiline;
+
+    .gallery-item {
+      @extend .column;
+      @extend .is-one-quarter-desktop;
+
+      margin: 0;
+
+      img {
+        border: 2px solid $medium-gray;
+        border-radius: 10px;
+      }
+    }
+  }
+}

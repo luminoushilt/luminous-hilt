@@ -1,0 +1,147 @@
+.banner {
+  background-color: $nav-bg-color;
+  color: $white;
+
+  .center-navbar-content {
+    align-items: center;
+  }
+
+  .brand-logo {
+    align-self: center;
+    display: flex;
+    text-decoration: none;
+
+    .tillman-connection {
+      color: $white;
+      font-size: 1.3rem;
+      padding-top: 4px;
+      padding-right: 5px;
+      padding-left: 17px;
+    }
+  }
+
+  .navbar-company-name {
+    color: $white;
+    display: block;
+    font-family: $heading-font-family;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .tillman-burger {
+    color: $white;
+    justify-content: flex-start;
+
+    &:hover {
+      background-color: $tillman;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      @extend .navbar-item;
+
+      align-self: center;
+
+      a {
+        color: $white;
+      }
+    }
+
+    .menu-item-has-children {
+      @extend .dropdown;
+      @extend .navbar-link;
+
+      &::after {
+        border-color: $white !important;
+      }
+
+      &:hover {
+        @extend .is-hoverable;
+
+        background-color: transparent;
+      }
+
+      .sub-menu {
+        @extend .dropdown-menu;
+
+        background-color: $nav-bg-color;
+        color: $white;
+
+        li {
+          margin: 1rem 0;
+
+          a {
+            font-size: 0.93rem;
+          }
+        }
+      }
+    }
+  }
+
+  .tillman-audio-player {
+    align-self: center;
+    margin-right: 10px;
+  }
+}
+
+.is-tillman {
+  background-color: $nav-bg-color;
+  color: $white;
+}
+
+@include touch {
+  .is-tillman {
+    .navbar-menu {
+      background-color: $nav-bg-color;
+
+      .nav {
+        flex-direction: column;
+
+        li a {
+          color: $white;
+          font-size: 0.93rem;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .navbar-company-name {
+    margin-left: 20px;
+  }
+
+  .navbar-menu {
+    margin: 1rem;
+
+    .nav li a {
+      font-size: 1.2rem;
+      margin: 0 0 0 2em;
+      opacity: 1;
+      position: relative;
+
+      &::before {
+        background-color: $action-color;
+        content: "";
+        display: block;
+        height: 5px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -0.75em;
+        transform: scale(0, 1);
+        transition: transform $navbar-timing $navbar-duration;
+      }
+
+      &:hover::before,
+      &:focus::before {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}

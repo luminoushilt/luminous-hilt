@@ -1,0 +1,17 @@
+/* source-sans-pro-regular - latin */
+
+@font-face {
+  font-family: "Bank Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bankgothiclightbt.woff");
+
+  /* IE9 Compat Modes */
+
+  src:
+    local("bankgothiclightbt"),
+    url("../fonts/bankgothiclightbt.woff") format("woff"),
+    url("../fonts/bankgothiclightbt.ttf") format("truetype");
+
+  /* Legacy iOS */
+}

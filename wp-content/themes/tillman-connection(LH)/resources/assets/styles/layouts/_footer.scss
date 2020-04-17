@@ -1,0 +1,109 @@
+/* ========================
+Footer
+======================= */
+
+footer {
+  background-color: $dark-gray;
+  border-top: 1px solid darken($dark-gray, 20%);
+  color: $white;
+  display: table-row;
+  height: 1px;
+  padding: 1em 0;
+
+  .widget.nav_menu-3.widget_nav_menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      @extend .navbar-item;
+
+      align-self: center;
+
+      a {
+        color: $white;
+        font-size: 1rem;
+        margin-bottom: 0;
+        opacity: 1;
+
+        &:hover {
+          color: $action-color;
+        }
+
+        &::after {
+          background: $action-color;
+          content: "";
+          display: block;
+          height: 5px;
+          margin: 1.4em auto;
+        }
+      }
+    }
+  }
+}
+
+@include touch {
+  .columns.is-vertical-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tillman-copyright {
+    order: 1;
+    padding-left: 0;
+  }
+
+  footer .menu {
+    flex-direction: column;
+
+    li a {
+      color: $white;
+
+      &::after {
+        background: $action-color;
+        display: block;
+        height: 1px;
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .tillman-copyright {
+    padding-left: 69px;
+  }
+
+  .menu li a {
+    align-self: center;
+    margin-left: 3rem;
+    position: relative;
+
+    &::after {
+      background-color: $action-color;
+      height: 5px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0.75em;
+      transform: scale(0, 1);
+      transition: transform $navbar-timing $navbar-duration;
+      width: auto;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: scale(1, 1);
+    }
+
+    &::before {
+      background: none;
+      top: initial;
+    }
+  }
+}

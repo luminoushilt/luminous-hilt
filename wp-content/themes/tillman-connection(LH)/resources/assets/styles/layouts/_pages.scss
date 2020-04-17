@@ -1,0 +1,11 @@
+.article-title {
+  text-shadow: 10px 5px 10px #111;
+}
+
+.article-banner-container {
+  @extend .hero-section-container;
+
+  .title {
+    color: $white;
+  }
+}

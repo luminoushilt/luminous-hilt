@@ -1,0 +1,146 @@
+@import "font-stacks";
+
+// Typography
+$base-font-family: $font-stack-bank-goth;
+$heading-font-family: $font-stack-bank-goth;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$jet-black: #000;
+$dark-gray: #333;
+$light-blue: #33c3f0 !default;
+$light-gray: #ddd;
+$medium-gray: #999;
+$medium-dark-gray: #3b3b39;
+$lh-orange: #f6921e;
+$lh-gray: #626261;
+$pink: #f6c;
+$royal-purple: #4e3862;
+$red: #d61212;
+$white: #fff;
+
+// Cool
+$aqua: #7fdbff;
+$blue: #0074d9;
+$navy: #001f3f;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime: #01ff70;
+$teal-one: #39cccc;
+$teal-two: #028482;
+$teal-three: rgba(0, 214, 170, 0.85);
+$tillman: $teal-two;
+
+// Warm
+$yellow: #ffdc00;
+$orange: #ff851b;
+$tomato-red: #ff4136;
+$fuchsia: #f012be;
+$purple: #b10dc9;
+$maroon: #85144b;
+
+// Gray Scale
+$silver: #ddd;
+$gray: #aaa;
+$black: #111;
+$footer-bg: #272727;
+
+$text-color: #6a6a6a;
+$primary-color: $text-color;
+
+// Font Colors
+$base-font-color: $text-color;
+$action-color: $lh-orange;
+$selection-color: $action-color;
+$nav-bg-color: $lh-gray;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$viewport-background-color: $white;
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+$navbar-duration: 250ms;
+$navbar-timing: ease-in-out;
+$navbar-delay: $navbar-duration;
+
+// Breakpoints
+$desktop: 960px;
+$lg-screen: 1240px;
+
+// Misc
+$global-radius: 4px !default;
+$full-viewport-width: 99vw;
+$full-viewport-height: 100vh;
+$full-width: 100%;
+$fill: 100%;
+
+// Buttons
+$_buttons-list: (
+  "button",
+  "[type='button']",
+  "[type='reset']",
+  "[type='submit']"
+);
+
+$all-buttons: $_buttons-list;
+
+// Text Inputs
+
+$_text-inputs-list: (
+  "[type='color']",
+  "[type='date']",
+  "[type='datetime']",
+  "[type='datetime-local']",
+  "[type='email']",
+  "[type='month']",
+  "[type='number']",
+  "[type='password']",
+  "[type='search']",
+  "[type='tel']",
+  "[type='text']",
+  "[type='time']",
+  "[type='url']",
+  "[type='week']",
+  "input:not([type])",
+  "textarea"
+);
+
+$all-text-inputs: $_text-inputs-list;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
+) !default;
+
+$negative-spacers: negativify-map($spacers) !default;
