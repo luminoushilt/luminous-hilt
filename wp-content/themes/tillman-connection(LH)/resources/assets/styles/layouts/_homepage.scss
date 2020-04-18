@@ -74,9 +74,11 @@
   color: $action-color;
 }
 
-.family-greeting {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 1em;
+.path {
+  position: relative;
+
+  a {
+    display: block;
+    max-width: 100%;
+  }
 }
