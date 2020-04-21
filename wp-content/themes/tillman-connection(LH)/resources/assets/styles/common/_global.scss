@@ -30,6 +30,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.is-luminous {
+  color: $action-color !important;
+}
+
 // Selection colors (easy to forget)
 ::selection {
   background: $selection-color;
