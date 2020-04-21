@@ -18,8 +18,11 @@
 	<div class="hero-body">
 		<div class="container">
 			<div class="columns is-multiline">
+				<p class="is-block">
+					{{ the_field('page_intro') }}
+				</p>
 				<div class="is-half-desktop path">
-					<a class="button is-warning is-outlined" href="#" target="_self" title="">
+					<a class="button is-warning is-outlined is-block" href="#" target="_self" title="">
 						Web Development
 					</a>
 				</div>
